@@ -11,7 +11,7 @@ export default class Root extends React.Component {
     render() {
         return (
             <>
-                <img src={"/assets/images/Fb.jpg"}/>
+                <img src={"/Fb.jpg"}/>
                 <h1>
                     {this.state.title}
                 </h1>
