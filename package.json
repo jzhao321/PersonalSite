@@ -9,7 +9,8 @@
         "build_webpack_prod": "webpack --mode production src/client/index.js -o lib/client/bundle.js",
         "build_babel": "babel ./src -d ./lib --ignore ./src/client",
         "startServer": "node ./lib/server",
-        "build_start": "yarn run build_babel && yarn run build_webpack_dev && yarn run startServer"
+        "build_css": "sass ./src/styles/sheet.scss ./assets/styles/sheet.css",
+        "build_start": "yarn run build_babel && yarn run build_webpack_dev && yarn run build_css && yarn run startServer"
     },
     "author": "",
     "license": "ISC",

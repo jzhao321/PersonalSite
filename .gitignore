@@ -1,2 +1,7 @@
 node_modules
 lib
+assets/styles
+.sass-cache
+./pnpm-debug.log
+./pnpm-lock.yaml
+./yarn.lock

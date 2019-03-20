@@ -1,6 +1,5 @@
 import { Link, Switch, Route, StaticRouter } from "react-router-dom";
 import React from "react";
-import Image from "./Fb.jpg";
 
 export default class Root extends React.Component {
     constructor(props) {
@@ -12,7 +11,7 @@ export default class Root extends React.Component {
     render() {
         return (
             <>
-                <img src={Image}/>
+                <img src={"/assets/images/Fb.jpg"}/>
                 <h1>
                     {this.state.title}
                 </h1>

@@ -8,7 +8,8 @@ import Root from "../react/App.js"
 
 const app = express();
 
-app.use(express.static(path.join(__dirname, "../client")));
+app.use("/", express.static(path.join(__dirname, "../client")));
+app.use("/assets", express.static(path.join(__dirname, "../../assets")));
 
 app.get("/*", (req, res) => {
     const context = {};
@@ -35,6 +36,7 @@ const htmlTemplate = (reactDom) => {
         <head>
             <meta charset = "utf-8">
             <title>React SSR</title>
+            <link rel="stylesheet" href="/assets/styles/sheet.css">
         </head>
 
         <body>
