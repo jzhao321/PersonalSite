@@ -1,0 +1,232 @@
+$NavFontSize: 10.5pt;
+$NavFontWeight: 700;
+$NavFontFamily: Lato;
+$NavLetterSpacing: 2px;
+
+$JumboFontSize: 40pt;
+$JumboFontFamily: Lato;
+$JumboFontWeight: bold;
+$JumboLetterSpacing: 4px;
+
+@import "../react/pages/Zinnstarter/Batch2/ZinnBatch2.scss";
+@import "../react/pages/Zinnstarter/Batch1/ZinnBatch1.scss";
+@import "../react/pages/Resources/HaveIdea/HaveIdea.scss";
+@import "../react/pages/Home/animation.scss";
+
+.bodyTag {
+    font-family: Lato;
+    margin: 0;
+    .NavBar {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        position: absolute;
+        box-sizing: border-box;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 99;
+        .LogoWrapper {
+            > img {
+                width: 200px;
+            }
+        }
+        .NavOption{
+            text-decoration: none;
+            color: white;
+            &:hover{
+                color: inherit;
+            }
+        }
+        .NavOptions {
+            text-align: right;
+            width: 100%;
+            > div {
+                //.folder
+                position: relative;
+                display: inline-block;
+                padding: 10px;
+                color: white;
+                font-family: $NavFontFamily;
+                font-weight: $NavFontWeight;
+                font-size: $NavFontSize;
+                letter-spacing: $NavLetterSpacing;
+                text-transform: uppercase;
+                transition: color 0.1s 0s ease-in-out;
+
+                .SubNav {
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: #0070cc;
+                    left: -0.5em;
+                    top: 35px;
+                    padding: 1em 0;
+                    transform: scale(1, 0);
+                    transform-origin: 0 0;
+                    transition: transform 0.14s 0s ease-in-out;
+
+                    .DropMenuItem {
+                        color: white;
+                        text-align: left;
+                        padding: 0.5em 1.5em;
+                        opacity: 0;
+                        transition: opacity 0.3s 0s cubic-bezier(1, -0.04, 0.58, 1), color 0.15s;
+                        white-space: nowrap;
+
+                        &:hover {
+                            color: #59cfbd;
+                        }
+                    }
+                }
+
+                &:hover {
+                    color: #59cfbd;
+                    .SubNav {
+                        transform: scale(1, 1) !important;
+                        .DropMenuItem {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+
+            .BecomeAMemberButton {
+                border-radius: 3px;
+                box-shadow: 0px 0.2em 0px 0px #0a64a6;
+                background-color: #0c7bcd;
+                padding: 1em 1.5em;
+                margin-left: 1em;
+                &:hover {
+                    background-color: #0d84db;
+                    color: white;
+                }
+            }
+        }
+    }
+    .Jumbotron {
+        background-repeat: no-repeat;
+        min-width: 1280px;
+        height: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-position: center;
+        p {
+            font-size: $JumboFontSize;
+            text-align: center;
+            font-family: $JumboFontFamily;
+            font-weight: $JumboFontWeight;
+            color: white;
+            letter-spacing: $JumboLetterSpacing;
+            line-height: 2em;
+        }
+    }
+    .Zinnstarter-About-Jumbotron {
+        background-position: center !important;
+    }
+
+    .Body {
+        display: flex;
+        align-items: center;
+        padding: 96px 32px;
+        .ContentRow {
+            display: flex;
+            flex-direction: row;
+        }
+        .ContentWrapper{
+            width: 100%;
+        }
+        .Content {
+            display: flex;
+            min-width: 1000px;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+            letter-spacing: 0.5px;
+            line-height: 1.6em;
+            font-size: 16px;
+            .ContentTitle {
+                justify-content: center;
+                text-align: center;
+                white-space: pre-wrap;
+                font-size: 18px;
+                letter-spacing: 4px;
+                text-transform: uppercase;
+                line-height: 1.3em;
+            }
+
+            .ContentText {
+                width: 100%;
+            }
+
+            .ContentSectionLabel {
+                width: 100%;
+            }
+
+            .ContentDivider {
+                margin: 49px 0;
+                height: 1px;
+                background-color: rgba(31, 31, 31, 0.15);
+                border-width: 0;
+                width: 100%;
+            }
+
+            .ContentSpacer {
+                margin: 1em 0;
+                height: 25px;
+            }
+
+            .ContentImageWrapper {
+                .ContentImage {
+                    box-sizing: border-box;
+                    padding: 17px;
+                }
+            }
+        }
+    }
+    .Footer {
+        background-color: rgba(0, 0, 0, 0.68);
+        color: white;
+        .FooterInner {
+            padding: 64px 32px;
+            box-sizing: border-box;
+            max-width: 1020px;
+            width: auto;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            > div {
+                text-align: center;
+            }
+            .SocialMedia {
+            }
+            .SiteInfo {
+            }
+        }
+    }
+}
+
+.Button1 {
+    background-color: #0070cc;
+    color: white !important;
+    font-family: "Lato";
+    font-size: 12pt;
+    font-weight: 400;
+    padding: 20px;
+    letter-spacing: 2pt;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0 2px 0 0 #005aa3;
+    cursor: pointer;
+}
+
+.ZinnstarterText {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 50px;
+    height: 100%;
+    width: 100%;
+}

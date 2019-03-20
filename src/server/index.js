@@ -3,7 +3,7 @@ import React from "react";
 import path from "path";
 import { renderToString } from "react-dom/server"
 import { StaticRouter } from "react-router-dom";
-import Root from "../react/App.js";
+import Root from "../react/Root.jsx";
 
 
 const app = express();
@@ -38,7 +38,7 @@ const htmlTemplate = (reactDom) => {
         </head>
 
         <body>
-            <div id="root">${reactDom}</div>
+            <div id="root" class="bodyTag">${reactDom}</div>
             <script src="bundle.js"></script>
         </body>
         </html>
