@@ -4,12 +4,12 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
         "build_webpack_dev": "webpack --mode development",
         "build_webpack_prod": "webpack --mode production",
         "startServer": "node ./lib",
         "build_css": "sass ./src/styles/sheet.scss ./static/sheet.css",
-        "build_start": "yarn run build_webpack_dev && yarn run build_css && yarn run startServer"
+        "build_start": "yarn run build_webpack_dev && yarn run build_css && yarn run startServer",
+        "build_prod": "yarn run build_webpack_prod && yarn run build_css && yarn run startServer"
     },
     "author": "",
     "license": "ISC",
@@ -20,7 +20,6 @@
         "react-router-dom": "^5.0.0"
     },
     "devDependencies": {
-        "@babel/cli": "^7.2.3",
         "@babel/core": "^7.3.4",
         "@babel/preset-env": "^7.3.4",
         "@babel/preset-react": "^7.0.0",

@@ -1,6 +1,8 @@
 node_modules
 lib
-assets/styles
+static/*.css
+static/*.map
+static/*.js
 .sass-cache
 ./pnpm-debug.log
 ./pnpm-lock.yaml
