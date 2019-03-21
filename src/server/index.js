@@ -4,16 +4,11 @@ import path from "path";
 import { renderToString } from "react-dom/server"
 import { StaticRouter  } from "react-router-dom";
 import Root from "../react/Root.jsx";
-
-const router = express.Router();
-
-router.get("/test", (req, res) => {
-    res.send("tested");
-})
+import debugRouter from "./api/debug.js";
 
 const app = express();
 
-app.use("/api", router);
+app.use("/api", debugRouter);
 
 app.use("/", express.static(path.join(__dirname, "../static")));
 
