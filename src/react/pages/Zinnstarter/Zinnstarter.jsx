@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-import { Route, Redirect } from "react-router-dom";
+import { Route, Redirect, Switch } from "react-router-dom";
 
 import ZinnstarterAbout from "./About/ZinnAbout.jsx";
 import ZinnBatch1 from "./Batch1/ZinnBatch1.jsx";
 import ZinnBatch2 from "./Batch2/ZinnBatch2.jsx";
+import ErrorPage from "../ErrorPage/ErrorPage.jsx";
 
 class Zinnstarter extends Component {
 	constructor(props) {
@@ -12,7 +13,7 @@ class Zinnstarter extends Component {
 
 	render() {
 		return (
-			<>
+			<Switch>
 				<Route
 					exact
 					path={`${this.props.match.url}/`}
@@ -34,7 +35,8 @@ class Zinnstarter extends Component {
 					path={`${this.props.match.url}/batch2`}
 					component={ZinnBatch2}
 				/>
-			</>
+				<Route component={ErrorPage}/>
+			</Switch>
 		);
 	}
 }

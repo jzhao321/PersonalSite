@@ -3,7 +3,6 @@ import React, { Component } from "react";
 class Content extends Component {
     constructor(props) {
         super(props);
-
         this.state = {
             title: (this.props.title) ? this.props.title : null,
             sectionLabel: (this.props.sectionLabel) ? this.props.sectionLabel : null,

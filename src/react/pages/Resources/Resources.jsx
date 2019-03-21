@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import { Route, Redirect } from "react-router-dom";
+import { Route, Redirect, Switch } from "react-router-dom";
 
 import HaveIdea from "./HaveIdea/HaveIdea.jsx";
 import Login from "./Login/Login.jsx";
+import ErrorPage from "../ErrorPage/ErrorPage.jsx";
 
 class Resources extends Component {
 	constructor(props) {
@@ -11,7 +12,7 @@ class Resources extends Component {
 
 	render() {
 		return (
-			<>
+			<Switch>
 				<Route
 					exact
 					path={`${this.props.match.url}/`}
@@ -29,7 +30,8 @@ class Resources extends Component {
 					path={`${this.props.match.url}/login`}
 					component={Login}
 				/>
-			</>
+				<Route component={ErrorPage}/>
+			</Switch>
 		);
 	}
 }

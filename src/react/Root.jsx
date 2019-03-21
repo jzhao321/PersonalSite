@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Home from "./pages/Home/Home.jsx";
 import { NavBar, Footer } from "./components";
 import Zinnstarter from "./pages/Zinnstarter/Zinnstarter.jsx";
 import Resources from "./pages/Resources/Resources.jsx";
+import ErrorPage from "./pages/ErrorPage/ErrorPage.jsx";
 
 class Root extends Component {
 	constructor(props) {
@@ -70,9 +71,13 @@ class Root extends Component {
 						}
 					]}
 				/>
-				<Route exact path="/" component={Home} />
-				<Route path="/zinnstarter" component={Zinnstarter} />
-				<Route path="/resources" component={Resources} />
+				<Switch>
+					<Route exact path="/" component={Home} />
+					<Route path="/zinnstarter" component={Zinnstarter} />
+					<Route path="/resources" component={Resources} />
+					<Route path="*" component={ErrorPage} />
+				</Switch>
+				
 				<Footer />
 			</>
 		);
