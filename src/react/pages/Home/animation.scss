@@ -67,9 +67,11 @@
     position: relative;
     perspective: 500px;
     margin: 0;
+    display:none;
 
     &:after{
         --distanceAway: 75px;
+        display: flex;
     }
 
     .JumboCube {

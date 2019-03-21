@@ -29,7 +29,7 @@ class ZinnstarterBatch2Body extends Component {
                     >
                         <Content
                             images = {[
-                                "images/Medixflow.png"
+                                "/images/Medixflow.png"
                             ]}
                         />
                         <Content
@@ -50,7 +50,7 @@ class ZinnstarterBatch2Body extends Component {
                     >
                         <Content
                             images = {[
-                                "images/2x.png"
+                                "/images/2x.png"
                             ]}
                         />
                         <Content
@@ -71,7 +71,7 @@ class ZinnstarterBatch2Body extends Component {
                     >
                         <Content
                             images = {[
-                                "images/Neoplank.jpg"
+                                "/images/Neoplank.jpg"
                             ]}
                         />
                         <Content
@@ -92,7 +92,7 @@ class ZinnstarterBatch2Body extends Component {
                     >
                         <Content
                             images = {[
-                                "images/Surplus.png"
+                                "/images/Surplus.png"
                             ]}
                         />
                         <Content
@@ -110,7 +110,7 @@ class ZinnstarterBatch2Body extends Component {
                     >
                         <Content
                             images = {[
-                                "images/Roam.png"
+                                "/images/Roam.png"
                             ]}
                         />
                         <Content
@@ -131,7 +131,7 @@ class ZinnstarterBatch2Body extends Component {
                     >
                         <Content
                             images = {[
-                                "images/Newsbee.png"
+                                "/images/Newsbee.png"
                             ]}
                         />
                         <Content
@@ -152,7 +152,7 @@ class ZinnstarterBatch2Body extends Component {
                     >
                         <Content
                             images = {[
-                                "images/Turon.png"
+                                "/images/Turon.png"
                             ]}
                         />
                         <Content
@@ -173,7 +173,7 @@ class ZinnstarterBatch2Body extends Component {
                     >
                         <Content
                             images = {[
-                                "images/AlgaWater.png"
+                                "/images/AlgaWater.png"
                             ]}
                         />
                         <Content
@@ -194,7 +194,7 @@ class ZinnstarterBatch2Body extends Component {
                     >
                         <Content
                             images = {[
-                                "images/Contct.png"
+                                "/images/Contct.png"
                             ]}
                         />
                         <Content

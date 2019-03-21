@@ -18,7 +18,7 @@ class ZinnstarterAboutBody extends Component {
                     className = "Content col-sm-6"
                 >
                     <img
-                        src = {"images/ZinnstarterProgram.png"}
+                        src = {"/images/ZinnstarterProgram.png"}
                     />
                     <Content
                         text={[

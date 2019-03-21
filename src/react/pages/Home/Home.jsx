@@ -16,10 +16,10 @@ class Home extends Component {
                     className = "JumboCube"
                     cube = {true}
                     cubeImages = {[
-                        "images/Jumbotron.jpg",
-                        "images/Jumbotron.jpg",
-                        "images/Jumbotron.jpg",
-                        "images/Jumbotron.jpg"
+                        "/images/Jumbotron.jpg",
+                        "/images/Jumbotron.jpg",
+                        "/images/Jumbotron.jpg",
+                        "/images/Jumbotron.jpg"
                     ]}
                     cubeText ={[
                         "San Jose State University’s Startup Incubator and Accelerator",

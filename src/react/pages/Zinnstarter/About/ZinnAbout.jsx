@@ -13,7 +13,7 @@ class ZinnstarterAbout extends Component{
             <>
                 <Jumbotron
                     className="Zinnstarter-About-Jumbotron Jumbotron"
-                    backgroundImage = {"images/ZinnStarter.jpg"}
+                    backgroundImage = {"/images/ZinnStarter.jpg"}
                     jumboText = {"Funding and Mentorship for Student Startups"}
                 />
                 <ZinnAboutBody/>

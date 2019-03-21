@@ -18,7 +18,7 @@ class ZinnBatch1Body extends Component {
                         sectionLabel="2017 - 2018"
                         className="ZinnstarterTimePeriod"
                     />
-                    <Content images={["images/ZinnBatch1Teams.jpg"]} spacer={true} />
+                    <Content images={["/images/ZinnBatch1Teams.jpg"]} spacer={true} />
                     <Content
                         text={[
                             "In Fall 2017, over 20 student-led projects applied to become a ZinnStarter Fellow for Spring 2018. We required at least an MVP.",
@@ -29,7 +29,7 @@ class ZinnBatch1Body extends Component {
                         spacer={true}
                     />
                     <ContentWrapper columns={2} contentDirection="row">
-                        <Content images={["images/Ambii.jpg"]} />
+                        <Content images={["/images/Ambii.jpg"]} />
                         <Content
                             title="ambii"
                             text={[
@@ -40,7 +40,7 @@ class ZinnBatch1Body extends Component {
                     </ContentWrapper>
                     <Content spacer={true} divider={true} />
                     <ContentWrapper columns={2} contentDirection="row">
-                        <Content images={["images/Vessel.jpg"]} />
+                        <Content images={["/images/Vessel.jpg"]} />
                         <Content
                             title="Vessel Athletics"
                             text={[
@@ -51,7 +51,7 @@ class ZinnBatch1Body extends Component {
                     </ContentWrapper>
                     <Content spacer={true} divider={true} />
                     <ContentWrapper columns={2} contentDirection="row">
-                        <Content images={["images/Spotme.jpg"]} />
+                        <Content images={["/images/Spotme.jpg"]} />
                         <Content
                             title="Spot Me"
                             text={[
@@ -62,7 +62,7 @@ class ZinnBatch1Body extends Component {
                     </ContentWrapper>
                     <Content spacer={true} divider={true} />
                     <ContentWrapper columns={2} contentDirection="row">
-                        <Content images={["images/Gratis.jpg"]} />
+                        <Content images={["/images/Gratis.jpg"]} />
                         <Content
                             title="Gratis"
                             text={[
@@ -73,7 +73,7 @@ class ZinnBatch1Body extends Component {
                     </ContentWrapper>
                     <Content spacer={true} divider={true} />
                     <ContentWrapper columns={2} contentDirection="row">
-                        <Content images={["images/Parkstash.jpg"]} />
+                        <Content images={["/images/Parkstash.jpg"]} />
                         <Content
                             title="Park Stash"
                             text={[
@@ -84,7 +84,7 @@ class ZinnBatch1Body extends Component {
                     </ContentWrapper>
                     <Content spacer={true} divider={true} />
                     <ContentWrapper columns={2} contentDirection="row">
-                        <Content images={["images/Deltaglass.jpg"]} />
+                        <Content images={["/images/Deltaglass.jpg"]} />
                         <Content
                             title="Delta Glass"
                             text={[

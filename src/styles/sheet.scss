@@ -12,7 +12,10 @@ $JumboLetterSpacing: 4px;
 @import "../react/pages/Zinnstarter/Batch1/ZinnBatch1.scss";
 @import "../react/pages/Resources/HaveIdea/HaveIdea.scss";
 @import "../react/pages/Home/animation.scss";
-
+body{
+    margin: 0;
+    padding: 0;
+}
 .bodyTag {
     font-family: Lato;
     margin: 0;

@@ -43,7 +43,7 @@ class NavBar extends Component {
                     className="LogoWrapper"
                 >
                     <img
-                        src={"images/IdeasLogo.png"}
+                        src={"/images/IdeasLogo.png"}
                     >
                     </img>
                 </div>

@@ -7,7 +7,7 @@ const root = document.getElementById("root");
 console.log("React has hydrated");
 
 ReactDOM.hydrate(
-    <BrowserRouter >
+    <BrowserRouter>
         <Root />
     </BrowserRouter>
 , root);
