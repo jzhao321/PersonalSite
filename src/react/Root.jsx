@@ -1,3 +1,4 @@
+import { hot } from "react-hot-loader/root";
 import React, { Component } from "react";
 
 class Root extends Component {
@@ -9,11 +10,11 @@ class Root extends Component {
 		return (
 			<>
 				<div>
-					wow this is adds
+					wow this is ass
 				</div>
 			</>
 		);
 	}
 }
 
-export default Root;
+export default hot(Root);

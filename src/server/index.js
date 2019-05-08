@@ -8,19 +8,20 @@ import Root from "../react/Root.jsx";
 import webpackDevMiddleware from "webpack-dev-middleware";
 import webpackHotMiddleware from "webpack-hot-middleware";
 import webpack from "webpack";
+const config = require("../../webpack.config")();
 
-import config from "../../webpack.config";
+import cors from "cors";
 
 const compiler = webpack(config);
 const devMiddleware = webpackDevMiddleware(compiler, {
+    hot: true,
     filename: config.output.filename,
     publicPath: config.output.publicPath,
-    stats: {
-        colors: true
-    }
 });
 
 const app = express();
+
+app.use(cors());
 
 app.use(devMiddleware);
 

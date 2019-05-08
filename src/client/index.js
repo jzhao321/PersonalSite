@@ -3,6 +3,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from 'react-router-dom'
 
+import { AppContainer } from "react-hot-loader"
+
 const root = document.getElementById("root");
 
 
@@ -12,11 +14,22 @@ const render = development ? ReactDOM.render : ReactDOM.hydrate;
 console.log(development);
 
 render(
-    <BrowserRouter>
-        <Root />
-    </BrowserRouter>
+    <AppContainer>
+        <BrowserRouter>
+            <Root />
+        </BrowserRouter>
+    </AppContainer>
 , root);
 
-if(development){
-    module.hot.accept();
+if (development) {
+    module.hot.accept("../react/Root.jsx", () => {
+        const NextRoot = require("../react/Root.jsx").default;
+        render(
+            <AppContainer>
+                <BrowserRouter>
+                    <Root />
+                </BrowserRouter>
+            </AppContainer>
+        , root);
+    });
 }

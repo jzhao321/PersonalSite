@@ -6,7 +6,7 @@
     "scripts": {
         "build_webpack_dev": "webpack --mode development",
         "build_webpack_prod": "webpack --mode production",
-        "start": "concurrently --kill-others 'npm run start:proxy' 'npm run start:dev'",
+        "start": "NODE_ENV=development concurrently --kill-others 'npm run start:proxy' 'npm run start:dev'",
         "start:proxy": "nodemon --exec babel-node ./src/server/index.js",
         "start:dev": "webpack-dev-server --open",
         "build_css": "sass ./src/styles/sheet.scss ./static/sheet.css"
@@ -15,6 +15,7 @@
     "license": "ISC",
     "dependencies": {
         "axios": "^0.18.0",
+        "cors": "^2.8.5",
         "express": "^4.16.4",
         "react": "^16.8.4",
         "react-dom": "^16.8.4",
@@ -25,9 +26,11 @@
         "@babel/node": "^7.2.2",
         "@babel/preset-env": "^7.3.4",
         "@babel/preset-react": "^7.0.0",
+        "@hot-loader/react-dom": "^16.8.6",
         "babel-loader": "^8.0.5",
         "concurrently": "^4.1.0",
         "nodemon": "^1.19.0",
+        "react-hot-loader": "^4.8.4",
         "watchman": "^1.0.0",
         "webpack": "^4.29.6",
         "webpack-cli": "^3.3.0",
