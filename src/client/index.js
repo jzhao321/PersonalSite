@@ -5,6 +5,8 @@ import { BrowserRouter } from 'react-router-dom'
 
 import { AppContainer } from "react-hot-loader"
 
+import "../styles/sheet.scss";
+
 const root = document.getElementById("root");
 
 

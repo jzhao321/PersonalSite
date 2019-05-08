@@ -1,5 +1,4 @@
 const path = require("path");
-const nodeExternals = require("webpack-node-externals");
 const webpack = require("webpack");
 
 console.log(path.join(__dirname, "static"));
@@ -41,6 +40,16 @@ module.exports = {
             use: {
                 loader: "babel-loader",
             }
+        },{
+            test: /\.scss$/,
+            use: [
+                "style-loader",
+                {
+                    loader: "css-loader"
+                },{
+                    loader: "sass-loader"
+                }
+            ]
         }],
     },
     resolve: {

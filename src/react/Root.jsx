@@ -9,8 +9,10 @@ class Root extends Component {
 	render() {
 		return (
 			<>
-				<div>
-					wow this is ass
+				<div
+					className = "test"
+				>
+					okay time to make personal website
 				</div>
 			</>
 		);

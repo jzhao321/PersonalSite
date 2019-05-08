@@ -1,6 +1,7 @@
 const path = require("path");
 const nodeExternals = require("webpack-node-externals");
 const webpack = require("webpack");
+const MiniCSS = require("mini-css-extract-plugin");
 
 console.log(path.join(__dirname, "static"));
 
@@ -26,6 +27,17 @@ module.exports = {
             use: {
                 loader: "babel-loader",
             }
+        },{
+            test: /\.scss$/,
+            use: [
+                MiniCSS.loader,
+                {
+                    loader: "css-loader"
+                },{
+                    loader: "sass-loader"
+                }
+            ]
         }],
     },
+    
 };
