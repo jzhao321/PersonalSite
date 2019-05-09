@@ -13,8 +13,6 @@ const root = document.getElementById("root");
 const development = module.hot && process.env.NODE_ENV === "development"
 const render = development ? ReactDOM.render : ReactDOM.hydrate;
 
-console.log(development);
-
 render(
     <AppContainer>
         <BrowserRouter>
