@@ -6,7 +6,7 @@
     "scripts": {
         "build_webpack_dev": "webpack --mode development",
         "build_webpack_prod": "webpack --mode production",
-        "start": "NODE_ENV=development concurrently --kill-others 'npm run start:proxy' 'npm run start:dev'",
+        "start": "cross-env SET NODE_ENV=development && concurrently --kill-others \"npm run start:proxy\" \"npm run start:dev\"",
         "start:proxy": "nodemon --exec babel-node ./src/server/index.js",
         "start:dev": "webpack-dev-server --open",
         "build_css": "sass ./src/styles/sheet.scss ./static/sheet.css"
@@ -30,6 +30,7 @@
         "@hot-loader/react-dom": "^16.8.6",
         "babel-loader": "^8.0.5",
         "concurrently": "^4.1.0",
+        "cross-env": "^5.2.0",
         "css-loader": "^2.1.1",
         "dart-sass": "^1.20.1",
         "mini-css-extract-plugin": "^0.6.0",

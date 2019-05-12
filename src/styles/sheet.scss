@@ -1,3 +1,16 @@
-.test{
+.body{
+    padding-top: 20em;
+    height: 200em;
     background-color: blue;
+}
+
+.fixed{
+    background-color: red;
+    
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
